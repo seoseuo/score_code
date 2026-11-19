@@ -2,6 +2,6 @@
   "name": "score-and-code",
   "version": "0.1.0",
   "private": true,
-  "scripts": { "dev": "next dev", "build": "next build", "start": "next start" },
+  "scripts": { "dev": "next dev", "build": "next build && node -e \"require('fs').cpSync('out', 'app/out', { recursive: true })\"", "start": "next start" },
   "dependencies": { "next": "^15.5.0", "react": "^19.0.0", "react-dom": "^19.0.0" }
 }
